@@ -1,6 +1,7 @@
+import React from "react";
 import { FaStream, FaRegTimesCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import "../Style/Nav.css"
+import "../Styles/Nav.css"
 
 interface Navbar{
   Home? : string,

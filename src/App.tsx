@@ -1,4 +1,4 @@
-
+import React from "react";
 import Home from './Routes/Home';
 import {
   BrowserRouter as Router,
@@ -22,7 +22,6 @@ function App() {
         <Route path="/Services" element={<Services/>}></Route>
       </Routes>
     </Router>
-    
   );
 }
 
