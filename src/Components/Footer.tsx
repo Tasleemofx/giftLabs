@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaWhatsapp } from "react-icons/fa"
-import { AiFillYoutube } from "react-icons/ai"
+import { AiFillYoutube } from "react-icons/ai";
+import "../Styles/Footer.css";
 
 interface Navbar{
   Home? : string,
@@ -37,9 +38,9 @@ const Footer = ({Home, About, Products, Services}: Navbar) => {
             <li>+2347030020010</li>
             <li>abc@giftlabs.com</li>
             <span className="socials" >
-              <li> <FaFacebookF /></li>
-              <li> < FaWhatsapp /></li>
-              <li> <AiFillYoutube /></li>
+              <li className="fb"> <FaFacebookF /></li>
+              <li className="wa"> < FaWhatsapp /></li>
+              <li className="yt"> <AiFillYoutube /></li>
             </span>
           </ul>
         </section>

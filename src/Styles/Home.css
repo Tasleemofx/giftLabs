@@ -1,1 +1,19 @@
-/*# sourceMappingURL=Home.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 80vh;
+}
+main section .banner {
+  margin: auto 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+main section .imagediv {
+  width: 100vw;
+  height: 50vh;
+}/*# sourceMappingURL=Home.css.map */

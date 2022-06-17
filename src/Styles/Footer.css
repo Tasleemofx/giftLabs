@@ -1,1 +1,24 @@
-/*# sourceMappingURL=Footer.css.map */
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  font-size: 5px;
+  background-color: #ffcccc;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer .socials {
+  display: flex;
+}
+footer .socials .fb {
+  color: blue;
+}
+footer .socials .wa {
+  background-color: #00ff00;
+  color: #fff;
+  border-radius: 50%;
+}
+footer .socials .yt {
+  color: #ff0000;
+}/*# sourceMappingURL=Footer.css.map */

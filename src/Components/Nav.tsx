@@ -1,5 +1,6 @@
-import React from "react";
-import { FaStream, FaRegTimesCircle } from "react-icons/fa";
+import React, {useState} from "react";
+import { AiOutlineClose } from "react-icons/ai";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import "../Styles/Nav.css"
 
@@ -11,17 +12,45 @@ interface Navbar{
 }
 
 const Nav = ({Home, About, Products, Services}: Navbar) => {
-  return (
+
+    const [openDropdown, setOpenDropdown] = useState(false)
+  return (<>
     <nav>
         <div>
             <Link to="/">
-                GiftLabs
+                <h2>GiftLabs</h2>
             </Link>
         </div>
         <div>
-            <FaStream/>
-            <ul className="hidden dropdown">
-                <FaRegTimesCircle/>
+            {!openDropdown ?
+            <GiHamburgerMenu className="hidden-lg" onClick={
+                ()=> setOpenDropdown(!openDropdown)
+            }/>:
+            <AiOutlineClose onClick={
+                ()=> setOpenDropdown(!openDropdown)
+            }/> }
+            
+        </div>
+        <div className="hidden-mb">
+            
+                <Link to="/">
+                    {Home}
+                </Link>
+                <Link to="/About">
+                    {About}
+                </Link>
+                <Link to="/Products">
+                    {Products}
+                </Link>
+                <Link to="/Services">
+                    {Services}
+                </Link>
+            </div>
+        
+    </nav>
+    { openDropdown ?
+    <div className="dropdown"> 
+            <ul className="hidden-lg">
                 <li>
                     <Link to="/">
                         {Home}
@@ -43,22 +72,9 @@ const Nav = ({Home, About, Products, Services}: Navbar) => {
                     </Link>
                 </li>
             </ul>
-        </div>
-        <div>
-            <Link to="/">
-                {Home}
-            </Link>
-            <Link to="/About">
-                {About}
-            </Link>
-            <Link to="/Products">
-                {Products}
-            </Link>
-            <Link to="/Services">
-                {Services}
-            </Link>
-        </div>
-    </nav>
+        </div>:
+            <></> }
+    </>
   )
 }
 

@@ -1,0 +1,33 @@
+$col-black: #000;
+$col-grey: rgba(0,0,0,.2);
+$col-pink: #ffcccc;
+$col-white: #fff;
+$col-blue: #0000ff;
+$col-green: #00ff00;
+$col-red: #ff0000;
+
+footer{
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         gap: 20px;
+         font-size: 5px;
+        //  color: $col-white;
+         background-color: $col-pink;
+         ul li{
+            list-style-type: none;
+         }
+         .socials{
+            display: flex;
+            .fb{
+                color: blue;
+            }
+            .wa{
+                background-color: $col-green;
+                color: $col-white;
+                border-radius: 50%;
+            }
+            .yt{
+                color: $col-red;
+            }
+         }
+}
