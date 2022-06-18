@@ -2,7 +2,7 @@ import Footer from "../Components/Footer";
 import Nav from "../Components/Nav";
 import React from "react";
 import "../Styles/Home.css";
-import flower from "../images/tulips-home.jpg";
+
 
 
 const Home = () => {
@@ -10,15 +10,14 @@ const Home = () => {
     <div>
       <Nav About="About" Products="Products" Services="Services"/>
       <main>
-        <section className="banner">
-          <h3>The best gifts for the best people</h3>
-          <div className="details">
-            <p>Professional, affectionate, love?</p>
-            <p>Whatever the occassion, we have a gift to match it</p>
+        <section >
+          <div className="banner">
+            <h1>The best gifts for the best people</h1>
+              <p>Professional, affectionate, love?</p>
+              <p>Whatever the occassion, we have a gift to match it</p>
+              <a href="#" className="btn"> Get Started</a>
           </div>
-          {/* <div >
-            <img src={flower} className="imagediv" alt="flower" />
-          </div> */}
+          
         </section>
       </main>
       <Footer About="About" Products="Products" Services="Services"/>
