@@ -39,11 +39,11 @@ nav{
     text-align: center;
     color: $col-black;
     width: 50vw;
+    height: 50vh;
     background-color: $col-pink;
-    margin: 0 auto;
     position: absolute;
     top: 10;
-    right: 0;
+    left: 0;
     animation: Animatedrop 5s ease-in-out 5s;
     ul li{
         list-style-type: none;
