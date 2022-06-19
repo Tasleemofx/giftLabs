@@ -1,15 +1,15 @@
-$col-white: #fff;
-$col-orange: #ffa500;
 
+@import "colors";
 @import "mixins";
 
-.btn{
-    @include btn(col-black,$col-orange,$col-white );
-}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+.btn{
+    @include btn($col-black,$col-orange,$col-white);
 }
 
 main {
@@ -17,17 +17,24 @@ main {
     background-size: cover;
     height: 70vh;
     color: $col-white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     .banner{
-            margin: auto;
+            margin: 10px;
             padding: 10px;
             text-align: center;
        p{
         color: $col-orange;
+        margin: 1em;
        }
     }
-    
+}
+section{
+    margin-bottom: 1em;
+    padding: 1em;
+    form{
+        width: 30vw;
+    }
+}
+.info{
+    background: $col-dpink;
+    color: $col-pink;
 }

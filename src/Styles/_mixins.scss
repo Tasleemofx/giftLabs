@@ -1,9 +1,29 @@
 @mixin btn($color, $bg, $font){
-    border: 1px solid $color;
     background: $bg;
     color: $font;
-    padding: 0.9em;
-    margin: auto;
+    padding: 0.7em;
     border-radius: 5px;
     text-decoration: none;
+}
+
+.d-flex{
+        display: flex;
+        flex-direction: column;
+}
+.ai-center{
+        align-items: center;
+}
+.jc-center{
+        justify-content: center;
+}
+
+a{
+        text-decoration: none;
+
+        &:visited{
+                color: black;
+        }
+        &:active{
+                color: black;
+        }
 }
