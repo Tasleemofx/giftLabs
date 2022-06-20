@@ -5,9 +5,16 @@ footer{
          grid-template-columns: repeat(3,1fr);
          gap: 20px;
          background-color: $col-pink;
+         a,
          ul li{
             list-style-type: none;
-         }
+            text-decoration: none;
+            color: $col-dpink;
+            display: flex;
+            &:visited{
+                color: $col-dpink;
+            }
+            }
          .socials{
             display: flex;
             .fb{

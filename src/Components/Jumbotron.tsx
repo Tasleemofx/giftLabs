@@ -1,11 +1,17 @@
 import React from 'react'
 
-const Jumbotron = () => {
+interface Paragraphs {
+  heading: string,
+  p2: string,
+  p3: string,
+  banner: string
+}
+const Jumbotron = ({heading,p2,p3, banner}: Paragraphs) => {
   return (
-        <section className="banner">
-            <h1>The best gifts for the best people</h1>
-            <p>Professional, affectionate, love?</p>
-            <p>Whatever the occassion, we have a gift to match it</p>
+        <section className={banner}>
+            <h1>{heading}</h1>
+            <p>{p2}</p>
+            <p>{p3}</p>
         </section>
   )
 }

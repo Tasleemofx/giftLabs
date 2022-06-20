@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import "../Styles/Nav.css"
 
 interface Navbar{
-  Home? : string,
-  About?: string,
-  Products?: string,
-  Services?: string
+  Home : string,
+  About: string,
+  Products: string,
+  Services: string
 }
 
 const Nav = ({Home, About, Products, Services}: Navbar) => {

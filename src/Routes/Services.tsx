@@ -6,8 +6,8 @@ const Services=()=>{
 
     return (
         <div>
-            <Nav About="About" Products="Products" Home="Home"/>
-            <Footer About="About" Products="Products" Home="Home"/>
+            <Nav Home="Home" Products="Products" About="About" Services="Services"/>
+            <Footer Home="Home" Products="Products" About="About" Services="Services"/>
         </div>
     )
 }

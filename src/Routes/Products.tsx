@@ -6,7 +6,7 @@ import { data } from '../data/data'
 const Products = () => {
   return (
     <div>
-      <Nav About="About" Home="Home" Services="Services"/>
+      <Nav Home="Home" Products="Products" About="About" Services="Services"/>
        <section>
           {
             data.map(({name, img, id})=>{
@@ -19,7 +19,7 @@ const Products = () => {
             })
           }
         </section>
-      <Footer About="About" Home="Home" Services="Services"/>
+      <Footer Home="Home" Products="Products" About="About" Services="Services"/>
     </div>
   )
 }

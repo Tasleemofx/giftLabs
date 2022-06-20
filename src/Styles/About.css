@@ -1,0 +1,14 @@
+.bnr {
+  background: url("../images/tulips-home.jpg") no-repeat;
+  background-size: cover;
+  height: 70vh;
+  color: #000;
+  padding: 2em;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bnr p {
+  margin: 1em;
+}/*# sourceMappingURL=About.css.map */

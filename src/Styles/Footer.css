@@ -4,8 +4,16 @@ footer {
   gap: 20px;
   background-color: #ffcccc;
 }
+footer a,
 footer ul li {
   list-style-type: none;
+  text-decoration: none;
+  color: #ff8080;
+  display: flex;
+}
+footer a:visited,
+footer ul li:visited {
+  color: #ff8080;
 }
 footer .socials {
   display: flex;

@@ -1,27 +1,40 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaFacebookF, FaWhatsapp } from "react-icons/fa"
 import { AiFillYoutube } from "react-icons/ai";
 import "../Styles/Footer.css";
 
 interface Navbar{
-  Home? : string,
-  About?: string,
-  Products?: string,
-  Services?: string
+  Home : string,
+  About: string,
+  Products: string,
+  Services: string
 }
 const Footer = ({Home, About, Products, Services}: Navbar) => {
   return (
     <footer>
         <section>
-            <p>GiftLabs</p>
+            <p>
+              <Link to="/">
+                GiftLabs
+              </Link>
+            </p>
             <p>Helping you make the best decision on gift items,
                 packaging and deliveries since 2000</p>
-            <ul>
-                <li>{Home}</li>
-                <li>{About}</li>
-                <li>{Products}</li>
-                <li>{Services}</li>
-            </ul>
+            
+            
+             <Link to="/">
+                    {Home}
+                </Link>
+                <Link to="/About">
+                    {About}
+                </Link>
+                <Link to="/Products">
+                    {Products}
+                </Link>
+                <Link to="/Services">
+                    {Services}
+                </Link>
         </section>
         <section>
           <p>Solutions we create</p>

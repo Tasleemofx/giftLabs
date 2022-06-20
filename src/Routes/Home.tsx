@@ -11,9 +11,13 @@ import Jumbotron from "../Components/Jumbotron";
 const Home = () => {
   return (
     <div>
-      <Nav About="About" Products="Products" Services="Services"/>
+      <Nav Home="Home" Products="Products" About="About" Services="Services"/>
       <main className="d-flex ai-center jc-center">
-        <Jumbotron />
+        <Jumbotron 
+        heading="The best gifts for the best people"
+        p2="Professional, affectionate, love?"
+        p3="Whatever the occassion, we have a gift to match it"
+        banner="banner"/>
         <a href="#" className="btn"> Get Started</a>       
       </main>
        <section >
@@ -22,7 +26,7 @@ const Home = () => {
           
         </section>
         <Info />
-      <Footer About="About" Products="Products" Services="Services"/>
+      <Footer Home="Home" Products="Products" About="About" Services="Services"/>
     </div>
   )
 }
