@@ -16,23 +16,23 @@ const Nav = ({Home, About, Products, Services}: Navbar) => {
     const [openDropdown, setOpenDropdown] = useState(false)
   return (<>
     <nav>
+        
         <div>
             <Link to="/">
                 <h2>GiftLabs</h2>
             </Link>
         </div>
-        <div>
+        <div className="hidden-lg">
             {!openDropdown ?
-            <GiHamburgerMenu className="hidden-lg" onClick={
+                <GiHamburgerMenu  onClick={
                 ()=> setOpenDropdown(!openDropdown)
-            }/>:
-            <AiOutlineClose onClick={
+                }/>:
+                <AiOutlineClose onClick={
                 ()=> setOpenDropdown(!openDropdown)
-            }/> }
-            
+                }/> }
         </div>
-        <div className="hidden-mb">
             
+        <div className="hidden-mb">
                 <Link to="/">
                     {Home}
                 </Link>

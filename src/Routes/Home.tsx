@@ -5,8 +5,7 @@ import "../Styles/Home.css";
 import SignIn from "../Components/SignIn";
 import SignUp from "../Components/SignUp";
 import Info from "../Components/Info";
-
-
+import Jumbotron from "../Components/Jumbotron";
 
 
 const Home = () => {
@@ -14,13 +13,8 @@ const Home = () => {
     <div>
       <Nav About="About" Products="Products" Services="Services"/>
       <main className="d-flex ai-center jc-center">
-        <section className="banner">
-            <h1>The best gifts for the best people</h1>
-              <p>Professional, affectionate, love?</p>
-              <p>Whatever the occassion, we have a gift to match it</p>
-              <a href="#" className="btn"> Get Started</a>
-        </section>
-       
+        <Jumbotron />
+        <a href="#" className="btn"> Get Started</a>       
       </main>
        <section >
         <SignIn />

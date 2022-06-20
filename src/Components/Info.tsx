@@ -1,5 +1,5 @@
 import React from 'react'
-// import { stock } from "../src/images/stock.jpg";
+// import Stock from "../src/images/stock.jpg";
 
 const Info = () => {
   return (
@@ -19,7 +19,7 @@ const Info = () => {
             Patronise us today and enjoy our express delivery of super amzing gift items
             embellished in perfection.
           </p>
-          {/* <img src={stock} alt="gift"/> */}
+          {/* <img src={Stock} alt="gift"/> */}
         </section>
   )
 }

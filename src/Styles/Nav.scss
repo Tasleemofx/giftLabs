@@ -63,3 +63,28 @@ nav{
         display: none;
     }
     }
+
+@media screen and (min-width: 400px) 
+// and (max-width:768)
+{
+    nav {
+            align-items: center;
+            div ul li {
+                padding: 1em;
+                text-decoration: none;
+                list-style-type: none;
+            }
+        }
+        .hidden-lg {
+                    display: none;
+        }
+        .hidden-mb {
+            display: flex;
+            padding: 0.5em;
+            align-items: center;
+            justify-content: center;
+            a{
+                padding: 1em;
+            }
+        }
+}
