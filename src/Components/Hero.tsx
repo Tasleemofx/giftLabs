@@ -6,7 +6,7 @@ interface Paragraphs {
   p3: string,
   banner: string
 }
-const Jumbotron = ({heading,p2,p3, banner}: Paragraphs) => {
+const Hero = ({heading,p2,p3, banner}: Paragraphs) => {
   return (
         <section className={banner}>
             <h1>{heading}</h1>
@@ -16,4 +16,4 @@ const Jumbotron = ({heading,p2,p3, banner}: Paragraphs) => {
   )
 }
 
-export default Jumbotron
+export default Hero;

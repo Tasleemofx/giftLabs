@@ -7,28 +7,34 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: none;
 }
 .btn{
-    @include btn($col-black,$col-orange,$col-white);
+    @include btn($col-orange, $col-white);
 }
 
 main {
     background: url("../images/gift-bg.jpg") no-repeat;
-    background-size: cover;
-    height: 70vh;
-    color: $col-white;
+    background-size:  100vw;
+    height: 50vh;
+   
     .banner{
-            margin: 10px;
+            margin: 3px;
             padding: 10px;
             text-align: center;
-       p{
-        color: $col-orange;
-        margin: 1em;
-       }
+            h1{
+                font-size: 1.2em;
+                color: $col-white;
+            }
+            p{
+                color: $col-orange;
+                margin: 1em;
+                font-size: 0.9em;
+            }
     }
 }
 section{
-    margin-bottom: 1em;
+    // margin-bottom: 1em;
     padding: 1em;
     form{
         width: 30vw;
@@ -36,11 +42,18 @@ section{
 }
 .info{
     background: $col-dpink;
-    color: $col-pink;
-    margin: 0;
+    color: $col-black;
     padding: 5em;
+    p{
+    width: 50vw;
+    }
 }
 
 @media screen and (min-width: 380px) and (max-width:768){
-    
+    main{
+        height: 70vh;
+        .banner {
+                margin: 10px;
+        }
+    }
 }

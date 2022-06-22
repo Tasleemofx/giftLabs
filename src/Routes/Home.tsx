@@ -5,7 +5,7 @@ import "../Styles/Home.css";
 import SignIn from "../Components/SignIn";
 import SignUp from "../Components/SignUp";
 import Info from "../Components/Info";
-import Jumbotron from "../Components/Jumbotron";
+import Hero from "../Components/Hero";
 
 
 const Home = () => {
@@ -13,9 +13,9 @@ const Home = () => {
     <div>
       <Nav Home="Home" Products="Products" About="About" Services="Services"/>
       <main className="d-flex ai-center jc-center">
-        <Jumbotron 
+        <Hero 
         heading="The best gifts for the best people"
-        p2="Professional, affectionate, love?"
+        p2="Professional, affectionate, romantic?"
         p3="Whatever the occassion, we have a gift to match it"
         banner="banner"/>
         <a href="#" className="btn"> Get Started</a>       
@@ -26,7 +26,7 @@ const Home = () => {
           
         </section>
         <Info />
-      <Footer Home="Home" Products="Products" About="About" Services="Services"/>
+      <Footer Products="Products" About="About" Services="Services"/>
     </div>
   )
 }

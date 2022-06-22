@@ -1,19 +1,19 @@
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 10px;
   background-color: #ffcccc;
+  color: #ff0000;
 }
 footer a,
 footer ul li {
   list-style-type: none;
   text-decoration: none;
-  color: #ff8080;
   display: flex;
 }
 footer a:visited,
 footer ul li:visited {
-  color: #ff8080;
+  color: #ff0000;
 }
 footer .socials {
   display: flex;

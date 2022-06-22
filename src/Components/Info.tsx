@@ -1,10 +1,12 @@
 import React from 'react'
-// import Stock from "../src/images/stock.jpg";
+import {FaQuoteLeft, FaQuoteRight} from "react-icons/fa";
 
 const Info = () => {
   return (
-    <section className="info">
+    <section className="info d-flex ai-center">
+          <h1><FaQuoteLeft/></h1>
           <p>
+            
             Getting the best gift for that special person requires in depth knowledge
             of the occassion,
             understanding of the individuals or groups involved, and an understanding 
@@ -19,6 +21,7 @@ const Info = () => {
             Patronise us today and enjoy our express delivery of super amzing gift items
             embellished in perfection.
           </p>
+          <h1><FaQuoteRight/></h1>
           {/* <img src={Stock} alt="gift"/> */}
         </section>
   )

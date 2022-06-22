@@ -5,27 +5,18 @@ import { AiFillYoutube } from "react-icons/ai";
 import "../Styles/Footer.css";
 
 interface Navbar{
-  Home : string,
   About: string,
   Products: string,
   Services: string
 }
-const Footer = ({Home, About, Products, Services}: Navbar) => {
+const Footer = ({ About, Products, Services}: Navbar) => {
   return (
     <footer>
-        <section>
-            <p>
-              <Link to="/">
-                GiftLabs
-              </Link>
-            </p>
-            <p>Helping you make the best decision on gift items,
-                packaging and deliveries since 2000</p>
             
-            
-             <Link to="/">
-                    {Home}
-                </Link>
+            <section>
+                <Link to="/">
+                  GiftLabs
+                </Link> 
                 <Link to="/About">
                     {About}
                 </Link>

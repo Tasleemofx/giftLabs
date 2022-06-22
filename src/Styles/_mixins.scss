@@ -1,4 +1,4 @@
-@mixin btn($color, $bg, $font){
+@mixin btn($bg, $font){
     background: $bg;
     color: $font;
     padding: 0.7em;

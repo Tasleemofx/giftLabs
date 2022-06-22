@@ -19,7 +19,7 @@ const Products = () => {
             })
           }
         </section>
-      <Footer Home="Home" Products="Products" About="About" Services="Services"/>
+      <Footer Products="Products" About="About" Services="Services"/>
     </div>
   )
 }
