@@ -1,5 +1,32 @@
 @import "colors";
 .sign-in, .sign-out{
-    background: $col-green;
-    color: $col-white;
+    background: $col-pink;
+    color: $col-dpink;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+    .form {
+        border: 3px solid $col-white;
+        border-radius: 1em 2em;
+        input{
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        background: $col-dpink;
+        margin: 1em;
+        height: 1em;
+        padding: 1em;
+        text-align: center;
+        &::placeholder{
+            color: $col-white;
+        }
+    }
+    .submit{
+        background: $col-orange;
+        color: $col-white;
+        padding: 0.6em;
+        border: 1px solid $col-orange;
+        border-radius: 20px;
+    }
+}
 }

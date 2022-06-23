@@ -1,4 +1,36 @@
 .sign-in, .sign-out {
-  background: #00ff00;
+  background: #ffcccc;
+  color: #ff8080;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.sign-in .form, .sign-out .form {
+  border: 3px solid #fff;
+  border-radius: 1em 2em;
+}
+.sign-in .form input, .sign-out .form input {
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background: #ff8080;
+  margin: 1em;
+  height: 1em;
+  padding: 1em;
+  text-align: center;
+}
+.sign-in .form input::-moz-placeholder, .sign-out .form input::-moz-placeholder {
   color: #fff;
+}
+.sign-in .form input:-ms-input-placeholder, .sign-out .form input:-ms-input-placeholder {
+  color: #fff;
+}
+.sign-in .form input::placeholder, .sign-out .form input::placeholder {
+  color: #fff;
+}
+.sign-in .form .submit, .sign-out .form .submit {
+  background: #ffa500;
+  color: #fff;
+  padding: 0.6em;
+  border: 1px solid #ffa500;
+  border-radius: 20px;
 }/*# sourceMappingURL=SignIn.css.map */

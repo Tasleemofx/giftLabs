@@ -15,9 +15,9 @@
 
 main {
     background: url("../images/gift-bg.jpg") no-repeat;
-    background-size:  100vw;
+    background-size:  cover;
     height: 50vh;
-   
+    padding: 1em;
     .banner{
             margin: 3px;
             padding: 10px;
@@ -41,19 +41,40 @@ section{
     }
 }
 .info{
-    background: $col-dpink;
-    color: $col-black;
+    // background: $col-dpink;
+    // color: $col-pink;
     padding: 5em;
-    p{
+    .infop{
     width: 50vw;
+    }
+    .al{
+        text-align: left;
+    }
+    .ar{
+        text-align: right;
+    }
+    .ceo{
+        width: 30vw;
+        height: 20vh;
+        border-radius: 50%;
     }
 }
 
-@media screen and (min-width: 380px) and (max-width:768){
+@media screen and (min-width: 450px) 
+// and (max-width:768)
+{
     main{
         height: 70vh;
         .banner {
                 margin: 10px;
+                // height: 70vh;
         }
+    }
+    .info{
+        .ceo {
+                width: 80px;
+                height: 75px;
+                border-radius: 50%;
+            }
     }
 }

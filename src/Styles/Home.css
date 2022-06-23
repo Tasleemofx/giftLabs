@@ -38,8 +38,9 @@ a:active {
 
 main {
   background: url("../images/gift-bg.jpg") no-repeat;
-  background-size: 100vw;
+  background-size: cover;
   height: 50vh;
+  padding: 1em;
 }
 main .banner {
   margin: 3px;
@@ -64,19 +65,34 @@ section form {
 }
 
 .info {
-  background: #ff8080;
-  color: #000;
   padding: 5em;
 }
-.info p {
+.info .infop {
   width: 50vw;
 }
+.info .al {
+  text-align: left;
+}
+.info .ar {
+  text-align: right;
+}
+.info .ceo {
+  width: 30vw;
+  height: 20vh;
+  border-radius: 50%;
+}
 
-@media screen and (min-width: 380px) and (max-width: 768) {
+@media screen and (min-width: 450px) {
   main {
     height: 70vh;
   }
   main .banner {
     margin: 10px;
+  }
+
+  .info .ceo {
+    width: 80px;
+    height: 75px;
+    border-radius: 50%;
   }
 }/*# sourceMappingURL=Home.css.map */
