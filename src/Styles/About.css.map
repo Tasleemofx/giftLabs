@@ -1,1 +1,1 @@
-{"version":3,"sources":["About.scss","_colors.scss","About.css"],"names":[],"mappings":"AACA;EACI,sDAAA;EACA,sBAAA;EACA,YAAA;EACA,WCLQ;EDMR,YAAA;EACA,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;AEAJ;AFEI;EACI,WAAA;AEAR","file":"About.css"}
+{"version":3,"sources":["About.scss","_colors.scss","About.css"],"names":[],"mappings":"AACA;EACI,YAAA;EACA,WCHQ;EDIR,YAAA;AEAJ;AFGI;EACI,WAAA;AEDR;;AFKA;EACI;IACI,sDAAA;IACA,sBAAA;IACA,WChBI;IDiBJ,iBAAA;IACA,aAAA;IACA,sBAAA;IACA,uBAAA;EEFN;AACF","file":"About.css"}

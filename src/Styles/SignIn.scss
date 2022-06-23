@@ -8,11 +8,14 @@
     .form {
         border: 3px solid $col-white;
         border-radius: 1em 2em;
+        padding: 0.4em;
+        width: max-content;
         input{
         outline: none;
         border: none;
         border-radius: 20px;
         background: $col-dpink;
+        width: max-content;
         margin: 1em;
         height: 1em;
         padding: 1em;
@@ -26,7 +29,7 @@
         color: $col-white;
         padding: 0.6em;
         border: 1px solid $col-orange;
-        border-radius: 20px;
+        border-radius: 7px;
     }
 }
 }

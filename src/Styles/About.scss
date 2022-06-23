@@ -1,16 +1,23 @@
 @import "colors";
 .bnr {
-    background: url("../images/tulips-home.jpg") no-repeat;
-    background-size: cover;
     height: 70vh;
     color: $col-black;
     padding: 2em;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
 
     p {
         margin: 1em;
+    }
+}
+
+@media screen and (min-width: 450px){
+    .bnr{
+        background: url("../images/tulips-home.jpg") no-repeat;
+        background-size: cover;
+        color: $col-black;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
