@@ -3,18 +3,15 @@ import React from 'react';
 interface Plan{
     name: string;
     price: string;
-    className: string
+    className: string;
+    details: string
 }
-const Plan=({name, price, className}: Plan)=>{
+const Plan=({name, price, className, details}: Plan)=>{
     return (
         <div className={className}>
             <h1>{name}</h1>
             <h3>{price}</h3>
-            <p>This plan is {} and includes
-                gift manangement and delivery.
-                We take full responsibility for the gift until 
-                it gets to the owner and 
-                they decide whether to keep or return it.
+            <p>The {name} plan is flexible and includes {details}
             </p>
         </div>
     )

@@ -4,21 +4,36 @@
     text-align: center;
     margin: 1em;
 }
-.Plans{
+.Plans {
     display: grid;
-    grid-template-columns: repeat(2, 20vw);
-    gap: 10px;
+    grid-template-rows: repeat(2, 1fr);
     color: $col-black;
+    gap: 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
+
 .plan{
     border: 0.5px solid $col-grey;
     background: $col-pink;
-    box-shadow: 2px 2px $col-black;
+    box-shadow: 1em inset $col-red;
     padding: 2em 1em; 
-    height: 56vh;
+    height: 30vh;
+    width: 50vw;
     border-radius: 15px;
+}
+
+
+@media screen and (min-width: 450px){
+    .Plans {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+        .plan{
+            width: 30vw;
+            margin: 0 auto;
+        }
 }
