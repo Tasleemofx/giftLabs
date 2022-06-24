@@ -1,0 +1,23 @@
+.plan-heading {
+  text-align: center;
+  margin: 1em;
+}
+
+.Plans {
+  display: grid;
+  grid-template-columns: repeat(2, 20vw);
+  gap: 10px;
+  color: #000;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan {
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  background: #ffcccc;
+  box-shadow: 2px 2px #000;
+  padding: 2em 1em;
+  height: 56vh;
+  border-radius: 15px;
+}/*# sourceMappingURL=Plans.css.map */

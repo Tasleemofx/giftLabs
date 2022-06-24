@@ -8,7 +8,7 @@ import Plans from '../Components/Plans';
 
 const About = () => {
   return (
-    <div>
+    <div className="About">
       <Nav Home="Home" Products="Products" About="About" Services="Services"/>
         <Plans/>
         <Info 

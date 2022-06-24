@@ -1,0 +1,24 @@
+@import "colors";
+
+.plan-heading{
+    text-align: center;
+    margin: 1em;
+}
+.Plans{
+    display: grid;
+    grid-template-columns: repeat(2, 20vw);
+    gap: 10px;
+    color: $col-black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan{
+    border: 0.5px solid $col-grey;
+    background: $col-pink;
+    box-shadow: 2px 2px $col-black;
+    padding: 2em 1em; 
+    height: 56vh;
+    border-radius: 15px;
+}

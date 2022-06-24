@@ -51,7 +51,8 @@ nav{
     position: absolute;
     top: 10;
     right: 0;
-    animation: Animatedrop 5s ease-in slide-in 0.5s;
+    // animation: Animatedrop 5s ease-in slide-in 0.5s;
+    animation: 3s ease-in 1s reverse both running slidein;
     ul li{
         list-style-type: none;
         padding: 0.6em;
