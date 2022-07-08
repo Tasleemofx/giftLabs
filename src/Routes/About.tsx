@@ -5,6 +5,8 @@ import Hero from "../Components/Hero";
 import Nav from '../Components/Nav'
 import "../Styles/About.css";
 import Plans from '../Components/Plans';
+import SignIn from '../Components/SignIn';
+import SignUp from '../Components/SignUp';
 
 const About = () => {
   return (
@@ -14,16 +16,19 @@ const About = () => {
         <Info 
         p1="Amazing gifts take a lot of thought, it requires an understanding
         of the proposed reciepient and what would make a lot of meaning to them.
-        We are experienced in curating it however you want it.
+        We are experienced in curating your gifts exactly how you want it.
         Nurture your relationships today and you will be glad you did."
-        p2="our gifts include a card which could conver whatever message you want,
+        p2="Our gifts include a card which could convey whatever message you want,
         Let us help you to do the work"
         p3=" Try us today."/>
-        < Hero 
-        heading="The best gifts that capture your feelings and thoughts"
-        p2="Leading the way with no problems"
-        p3="Deliveries so fast you wish you didn't place your order so early"
+        <SignIn />
+        <SignUp />
+        <Hero 
+        heading="The best gifts to capture your feelings and thoughts"
+        p2="We lead the way with no problems whatsoever."
+        p3="With deliveries so fast you wish you didn't place your order so early."
         banner="bnr"/>
+     
        
       <Footer  Products="Products" About="About" Services="Services"/>
     </div>

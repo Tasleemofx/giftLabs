@@ -2,18 +2,22 @@ import React from 'react'
 import Footer from '../Components/Footer'
 import Nav from '../Components/Nav'
 import { data } from '../data/data'
+import "../Styles/Products.css";
 
 const Products = () => {
   return (
     <div>
       <Nav Home="Home" Products="Products" About="About" Services="Services"/>
-       <section>
+       <section className="products">
           {
             data.map(({name, img, id})=>{
               return(
-                <div key={id}>
-                  <img src={img} alt="giftitem"/>
-                  <p>{name}</p>
+                <div key={id} className="product">
+                  <div>
+                    <img src={img} className="product-img" alt="giftitem"/>
+                    <h3>{name}</h3>
+                  </div>
+                  <a href="#" className="btn"> Buy Item</a>
                 </div>
               )
             })

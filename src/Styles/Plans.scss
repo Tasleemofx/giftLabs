@@ -9,9 +9,16 @@
     grid-template-rows: repeat(2, 1fr);
     color: $col-black;
     gap: 10px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    
+    .plan{
+        height: 40vh;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
@@ -33,7 +40,7 @@
             
         }
         .plan{
-            width: 30vw;
+            width: 23vw;
             margin: 0 auto;
         }
 }

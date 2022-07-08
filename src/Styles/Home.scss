@@ -34,18 +34,20 @@ main {
     }
 }
 section{
-    // margin-bottom: 1em;
+    
     padding: 1em;
     form{
         width: 30vw;
     }
 }
 .info{
-    // background: $col-dpink;
-    // color: $col-pink;
-    padding: 5em;
+    padding: 0.5em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 1em;
+    width: 80vw;
     .infop{
-    width: 50vw;
+    width: 40vw;
     }
     .al{
         text-align: left;
