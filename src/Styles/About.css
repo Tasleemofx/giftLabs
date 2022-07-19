@@ -1,6 +1,51 @@
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.df-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #fff;
+}
+a:active {
+  color: #fff;
+}
+
 .About {
   background: #000;
   color: #fff;
+}
+
+.mission {
+  margin: 0;
+  padding: 2rem;
+  color: #000;
+  background: burlywood;
+}
+.mission h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.mission ul li {
+  border-top: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  padding: 0.7em;
 }
 
 .bnr {
@@ -22,5 +67,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .mission {
+    padding: 5rem;
+  }
+  .mission h3 {
+    font-size: 20px;
+  }
+  .mission ul li {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
   }
 }/*# sourceMappingURL=About.css.map */

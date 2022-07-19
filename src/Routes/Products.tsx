@@ -17,7 +17,7 @@ const Products = () => {
                     <img src={img} className="product-img" alt="giftitem"/>
                     <h3>{name}</h3>
                   </div>
-                  <a href="#" className="btn"> Buy Item</a>
+                  <a href="#" className="btn product-btn"> Buy Item</a>
                 </div>
               )
             })

@@ -6,41 +6,43 @@
 }
 .Plans {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     color: $col-black;
-    gap: 10px;
     
     .plan{
-        height: 40vh;
-        width: 30vw;
+         border: 0.5px solid $col-grey;
+        background: $col-pink;
+        box-shadow: 1em inset $col-red;
+        margin:1em auto;
+        padding: 10px;    
+        border-radius: 15px;
+        height: 60vh;
+        width: 60vw;
         display: flex;
         flex-direction: column;
-        text-align: center;
         align-items: center;
         justify-content: center;
+        .plan-btn{
+            width: 5em;
+        }
     }
 }
 
 
-.plan{
-    border: 0.5px solid $col-grey;
-    background: $col-pink;
-    box-shadow: 1em inset $col-red;
-    padding: 2em 1em; 
-    height: 30vh;
-    width: 50vw;
-    border-radius: 15px;
-}
+// .plan{
+//    
+// }
 
 
 @media screen and (min-width: 450px){
     .Plans {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             
-        }
         .plan{
-            width: 23vw;
+            height: 70vh;
+            width: 20vw;
             margin: 0 auto;
-        }
+            }
+}
 }

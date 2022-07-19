@@ -2,25 +2,26 @@
 @import "mixins";
 
 .products{
+    display: flex;
+    flex-direction: column;
 .product{
-    display: grid;
-    grid-template-rows: 1fr 0.3fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 1px solid $col-black;
+    border-radius: 20px;
     margin: 1em;
     padding: 1em;
     height: max-content;
     text-align: center;
     .product-img{
-        width: 350px; 
-        height: 250px;
+        width: 80vw; 
+        height: 30vh;
     }
-    .btn{
-        width: 7vw;
-        height: 6vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .product-btn{
+        width: 6em;
+        height: 2.5em;
     }
 }
 }
@@ -29,12 +30,27 @@
     .products{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    .product{
+            height: 50vh;
+            width: 30vw;
+    .product-img{
+        width: 30vw; 
+        height: 40vh;
+    }
+        }
+    
     }
 }
 
 @media screen and (min-width: 800px){
     .products{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        .product-img{
+        width: 30vw; 
+        height: 40vh;
+    }
+    }
 }
-}
+

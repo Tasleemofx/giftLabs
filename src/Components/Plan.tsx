@@ -13,6 +13,9 @@ const Plan=({name, price, className, details}: Plan)=>{
             <h3>{price}</h3>
             <p>The {name} plan is flexible and includes {details}
             </p>
+            <a href="june" className="btn plan-btn">
+                Subscribe
+            </a>
         </div>
     )
 }
