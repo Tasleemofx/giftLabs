@@ -72,10 +72,8 @@ section form {
 
 .info {
   padding: 0.5em;
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-bottom: 1em;
-  width: 80vw;
+  margin: 1em auto;
+  width: 60vw;
 }
 .info .infop {
   width: 40vw;

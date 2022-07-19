@@ -14,33 +14,27 @@
         background: $col-pink;
         box-shadow: 1em inset $col-red;
         margin:1em auto;
-        padding: 10px;    
+        padding: 1em;    
         border-radius: 15px;
-        height: 60vh;
         width: 60vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         .plan-btn{
-            width: 5em;
+            width: 80px;
         }
     }
 }
 
 
-// .plan{
-//    
-// }
 
 
 @media screen and (min-width: 450px){
     .Plans {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            
+            display: flex;
+                       
         .plan{
-            height: 70vh;
             width: 20vw;
             margin: 0 auto;
             }

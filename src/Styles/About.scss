@@ -3,6 +3,16 @@
 .About{
     background: $col-black;
     color: $col-white;
+    .signs{
+        display: flex;
+        flex-direction: column;
+        background: $col-pink;
+        width: 100%;
+        margin: 0.5em auto;
+        padding: 0.5em;
+        margin-bottom: 0;
+        gap: 30px;
+    }
 }
 .mission{
     h3{
@@ -30,7 +40,15 @@
     }
 }
 
-@media screen and (min-width: 450px){
+@media screen and (min-width: 700px){
+    .About{
+    .signs{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
     .bnr{
         background: url("../images/tulips-home.jpg") no-repeat;
         background-size: cover;

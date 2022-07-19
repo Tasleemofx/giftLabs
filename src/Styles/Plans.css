@@ -13,9 +13,8 @@
   background: #ffcccc;
   box-shadow: 1em inset #ff0000;
   margin: 1em auto;
-  padding: 10px;
+  padding: 1em;
   border-radius: 15px;
-  height: 60vh;
   width: 60vw;
   display: flex;
   flex-direction: column;
@@ -23,16 +22,14 @@
   justify-content: center;
 }
 .Plans .plan .plan-btn {
-  width: 5em;
+  width: 80px;
 }
 
 @media screen and (min-width: 450px) {
   .Plans {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
   }
   .Plans .plan {
-    height: 70vh;
     width: 20vw;
     margin: 0 auto;
   }

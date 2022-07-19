@@ -34,7 +34,6 @@ main {
     }
 }
 section{
-    
     padding: 1em;
     form{
         width: 30vw;
@@ -42,10 +41,8 @@ section{
 }
 .info{
     padding: 0.5em;
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-bottom: 1em;
-    width: 80vw;
+    margin:1em auto;
+    width: 60vw;
     .infop{
     width: 40vw;
     }
@@ -63,13 +60,12 @@ section{
 }
 
 @media screen and (min-width: 450px) 
-// and (max-width:768)
+
 {
     main{
         height: 70vh;
         .banner {
                 margin: 10px;
-                // height: 70vh;
         }
     }
     .info{
